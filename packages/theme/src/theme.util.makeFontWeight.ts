@@ -1,4 +1,4 @@
-import type { ThemeFontWeight } from './theme.config.types';
+import type { ThemeFontWeight } from "./theme.config.types";
 
 /**
  * A utility to return the correct CSS variable
@@ -6,5 +6,5 @@ import type { ThemeFontWeight } from './theme.config.types';
  * the :root
  */
 export const makeFontWeight = (weight: ThemeFontWeight) => {
-    return `var(--jawnt-font-weight-${weight})`;
+  return `var(--jawnt-font-weight-${weight})`;
 };

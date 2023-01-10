@@ -1471,6 +1471,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mu-design/cli@workspace:packages/cli":
+  version: 0.0.0-use.local
+  resolution: "@mu-design/cli@workspace:packages/cli"
+  languageName: unknown
+  linkType: soft
+
 "@mu-design/theme@workspace:packages/theme":
   version: 0.0.0-use.local
   resolution: "@mu-design/theme@workspace:packages/theme"
@@ -3193,6 +3199,8 @@ __metadata:
     "@typescript-eslint/parser": latest
     eslint: latest
     eslint-plugin-react: latest
+    prettier: ^2.8.2
+    typescript: ^4.9.4
   languageName: unknown
   linkType: soft
 
@@ -3422,6 +3430,15 @@ __metadata:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: cd192ec0d0a8e4c6da3bb80e4f62afe336df3f76271ac6deb0e6a36187133b6073a19e9727a1ff108cd8b9982e4768850d413baa71214dd80c7979617dca827a
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "prettier@npm:2.8.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
   languageName: node
   linkType: hard
 

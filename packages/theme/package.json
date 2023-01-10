@@ -1,52 +1,52 @@
 {
-    "name": "@mu-design/theme",
-    "version": "1.0.0",
-    "description": "A collection of small typesafe utilities for easily creating and interfacing a CSS variable based design system.",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/esm/index.d.ts",
-    "type": "module",
-    "author": "Drew DeCarme (drewdecarme@gmail.com)",
-    "sideEffects": false,
-    "scripts": {
-        "build:styles": "yarn tsc --project tsconfig.css.json && yarn linaria --source-root dist/css/**.*.js --out-dir dist/css && rm -rf dist/css && mv dist/theme.stylesheet.css dist/index.css",
-        "build:esm": "yarn tsc --project tsconfig.esm.json",
-        "build:cjs": "yarn tsc --project tsconfig.cjs.json",
-        "build": "yarn build:esm & yarn build:cjs & yarn build:styles",
-        "test": "vitest --config ../test-utils/config.ts",
-        "test:run": "yarn test run",
-        "test:coverage": "yarn test:run --coverage"
+  "name": "@mu-design/theme",
+  "version": "1.0.0",
+  "description": "A collection of small typesafe utilities for easily creating and interfacing a CSS variable based design system.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "type": "module",
+  "author": "Drew DeCarme (drewdecarme@gmail.com)",
+  "sideEffects": false,
+  "scripts": {
+    "build:styles": "yarn tsc --project tsconfig.css.json && yarn linaria --source-root dist/css/**.*.js --out-dir dist/css && rm -rf dist/css && mv dist/theme.stylesheet.css dist/index.css",
+    "build:esm": "yarn tsc --project tsconfig.esm.json",
+    "build:cjs": "yarn tsc --project tsconfig.cjs.json",
+    "build": "yarn build:esm & yarn build:cjs & yarn build:styles",
+    "test": "vitest --config ../test-utils/config.ts",
+    "test:run": "yarn test run",
+    "test:coverage": "yarn test:run --coverage"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "node": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
     },
-    "exports": {
-        ".": {
-            "types": "./dist/esm/index.d.ts",
-            "import": "./dist/esm/index.js",
-            "require": "./dist/cjs/index.js",
-            "node": "./dist/esm/index.js",
-            "default": "./dist/cjs/index.js"
-        },
-        "./css": {
-            "types": "./dist/index.css",
-            "import": "./dist/index.css",
-            "node": "./dist/index.css",
-            "require": "./dist/index.css",
-            "default": "./dist/index.css"
-        },
-        "./dist/index.css": {
-            "types": "./dist/index.css",
-            "import": "./dist/index.css",
-            "node": "./dist/index.css",
-            "require": "./dist/index.css",
-            "default": "./dist/index.css"
-        }
+    "./css": {
+      "types": "./dist/index.css",
+      "import": "./dist/index.css",
+      "node": "./dist/index.css",
+      "require": "./dist/index.css",
+      "default": "./dist/index.css"
     },
-    "devDependencies": {
-        "@linaria/cli": "^4.1.10",
-        "@linaria/core": "^4.2.5",
-        "goober": "^2.1.11",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "typescript": "^4.9.4"
-    },
-    "packageManager": "yarn@3.3.1"
+    "./dist/index.css": {
+      "types": "./dist/index.css",
+      "import": "./dist/index.css",
+      "node": "./dist/index.css",
+      "require": "./dist/index.css",
+      "default": "./dist/index.css"
+    }
+  },
+  "devDependencies": {
+    "@linaria/cli": "^4.1.10",
+    "@linaria/core": "^4.2.5",
+    "goober": "^2.1.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "yarn@3.3.1"
 }

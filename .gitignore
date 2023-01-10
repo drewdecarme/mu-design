@@ -1,4 +1,4 @@
-dist
+**/*/dist/
 .yarn/*
 !.yarn/cache
 !.yarn/patches

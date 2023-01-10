@@ -1,7 +1,7 @@
 {
-    "extends": "./tsconfig.esm.json",
-    "compilerOptions": {
-        "outDir": "dist/css"
-    },
-    "include": ["src/index.stylesheet.ts"]
+  "extends": "./tsconfig.esm.json",
+  "compilerOptions": {
+    "outDir": "dist/css"
+  },
+  "include": ["src/index.stylesheet.ts"]
 }

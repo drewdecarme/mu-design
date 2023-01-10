@@ -5,10 +5,10 @@
  * likely throw a compiler error
  */
 export function makeClass<T extends string>(classNameValues: T[]) {
-    const obj = classNameValues.reduce<Record<T, string>>((accum, key) => {
-        return { ...accum, [key]: `.${key}` };
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-    }, {});
-    return obj as unknown as Record<T, string>;
+  const obj = classNameValues.reduce<Record<T, string>>((accum, key) => {
+    return { ...accum, [key]: `.${key}` };
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+  }, {});
+  return obj as unknown as Record<T, string>;
 }

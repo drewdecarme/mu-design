@@ -17,5 +17,21 @@
     "eslint-plugin-react": "latest",
     "prettier": "^2.8.2",
     "typescript": "^4.9.4"
-  }
+  },
+  "description": "A collection of small typesafe utilities for easily creating and interfacing a CSS variable based design system.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewdecarme/mu-design.git"
+  },
+  "author": "Drew DeCarme (drewdecarme@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drewdecarme/mu-design/issues"
+  },
+  "homepage": "https://github.com/drewdecarme/mu-design#readme"
 }

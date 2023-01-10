@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="mu-design" src="./logo.png" width="256" style="border-radius: 2rem" />
+    <img alt="mu-design" src="./logo.png" width="256" style="border: 1px solid #e6e6e6; border-radius: 20px;"/>
 </p>
 <h1 align="center">
     μ Design

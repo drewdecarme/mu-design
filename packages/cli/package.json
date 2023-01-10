@@ -1,0 +1,19 @@
+{
+  "name": "@mu-design/cli",
+  "version": "1.0.0",
+  "description": "The mu-design CLI to create stylesheets based upon the mu-config file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/drewdecarme/mu-design.git"
+  },
+  "author": "Drew DeCarme (drewdecarme@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drewdecarme/mu-design/issues"
+  },
+  "homepage": "https://github.com/drewdecarme/mu-design#readme"
+}

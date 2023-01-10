@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist/esm",
+        "module": "ESNext",
+        "target": "ESNext",
+        "declaration": true,
+        "declarationMap": true,
+        "noEmit": false
+    },
+    "include": ["src/index.ts"]
+}

@@ -2,7 +2,15 @@
   "name": "@mu-design/cli",
   "version": "1.0.0",
   "description": "The mu-design CLI to create stylesheets based upon the mu-config file",
-  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mu": "bin/mu.js"
+  },
+  "scripts": {
+    "mu": "yarn mu",
+    "build": "yarn swc src/index.ts --out-dir dist --source-maps",
+    "dev": "yarn build --watch --log-watch-compilation"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/drewdecarme/mu-design.git"
@@ -12,5 +20,22 @@
   "bugs": {
     "url": "https://github.com/drewdecarme/mu-design/issues"
   },
-  "homepage": "https://github.com/drewdecarme/mu-design#readme"
+  "homepage": "https://github.com/drewdecarme/mu-design#readme",
+  "installConfig": {
+    "hoistingLimits": "dependencies"
+  },
+  "dependencies": {
+    "@swc/cli": "^0.1.59",
+    "@swc/core": "^1.3.26",
+    "esbuild": "^0.16.17",
+    "inquirer": "^9.1.4",
+    "meow": "^11.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.31.0",
+    "typescript": "^4.9.4"
+  }
 }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "mu": "yarn mu",
-    "build": "yarn swc src/index.ts --out-dir dist --source-maps",
+    "build": "yarn swc src --out-dir dist --source-maps",
     "dev": "yarn build --watch --log-watch-compilation"
   },
   "repository": {

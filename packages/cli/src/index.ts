@@ -1,22 +1,18 @@
 import meow from "meow";
 
-import { FlagInit } from "./init";
+import { run as runInit } from "./init.js";
 
-type Flags = {
-  init: FlagInit;
-};
-
-export const cli = meow<Flags>(
+const cliConfig = meow(
   `
   Test
 `,
   {
     importMeta: import.meta,
-    flags: {
-      init: {
-        type: "string",
-        alias: "i",
-      },
-    },
   }
 );
+
+export function cli() {
+  if (cliConfig.input.includes("init")) {
+    runInit();
+  }
+}
